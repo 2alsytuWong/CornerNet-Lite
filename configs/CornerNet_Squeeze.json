@@ -1,11 +1,11 @@
 {
     "system": {
-        "dataset": "COCO",
-        "batch_size": 55,
+        "dataset": "BM",
+        "batch_size": 10,
         "sampling_function": "cornernet",
 
-        "train_split": "trainval",
-        "val_split": "minival",
+        "train_split": "train",
+        "val_split": "val",
 
         "learning_rate": 0.00025,
         "decay_rate": 10,
@@ -19,7 +19,7 @@
         "stepsize": 450000,
         "snapshot": 5000,
 
-        "chunk_sizes": [13, 14, 14, 14],
+        "chunk_sizes": [10],
 
         "data_dir": "./data"
     },
@@ -37,7 +37,7 @@
         "gaussian_bump": true,
         "gaussian_iou": 0.3,
 
-        "input_size": [511, 511],
+        "input_size": [320, 320],
         "output_sizes": [[64, 64]],
 
         "test_scales": [1],
